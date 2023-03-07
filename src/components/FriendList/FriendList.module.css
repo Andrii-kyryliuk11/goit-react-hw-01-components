@@ -1,0 +1,28 @@
+.item {
+    
+    min-width: 250px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+ align-items: center;
+    gap: 10px
+}
+.online {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    border-radius: 50%;
+   
+    
+
+}
+.offline {
+    display: block;
+    width: 20px;
+    height: 20px; 
+    background-color: red;
+    color: transparent;
+    border-radius: 50%;
+}

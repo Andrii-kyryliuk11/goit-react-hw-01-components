@@ -1,0 +1,19 @@
+.table {
+width: 100%
+}
+
+
+thead {
+    height: 30px;
+  background-color: turquoise;
+}
+
+th {
+    width: calc(100% / 3);
+}
+
+td {
+    height: 25px;
+    background-color: #fff;
+    text-align: center;
+}

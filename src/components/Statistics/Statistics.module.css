@@ -1,0 +1,28 @@
+.statistics {
+    margin-bottom: 20px;
+    background-color: #fff;
+text-align: center;
+}
+
+.title {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.stat_list {
+    
+display: flex;
+justify-content: space-between;
+ background-color: yellow;
+}
+
+.item {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.stat_list li:not(:last-child) {
+     border-right: 1px solid black;
+}
