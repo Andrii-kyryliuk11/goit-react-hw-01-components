@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
+  const array = Object.entries(stats).flatMap(stat => stat);
+
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -13,16 +15,16 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       <div className={css.profile_footer}>
         <ul className={css.stats}>
           <li>
-            <span className="label">{Object.keys(stats)[0]}</span>
-            <span className="quantity">{Object.values(stats)[0]}</span>
+            <span className="label">{array[0]}</span>
+            <span className="quantity">{array[1]}</span>
           </li>
           <li>
-            <span className="label">{Object.keys(stats)[1]}</span>
-            <span className="quantity">{Object.values(stats)[1]}</span>
+            <span className="label">{array[2]}</span>
+            <span className="quantity">{array[3]}</span>
           </li>
           <li>
-            <span className="label">{Object.keys(stats)[2]}</span>
-            <span className="quantity">{Object.values(stats)[2]}</span>
+            <span className="label">{array[4]}</span>
+            <span className="quantity">{array[5]}</span>
           </li>
         </ul>
       </div>
